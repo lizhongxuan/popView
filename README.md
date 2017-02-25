@@ -9,29 +9,31 @@ This is a similar popTableView of Ipad.The difference is the screen of the limit
 
 ## USE
 One of the most important line of code : [self.popView initArr:arr withButton:_btn withSize:popFrame withDirection:right];
+
 The corresponding argument parsing:
-1.The content of the tableview.
-2. Determine which button will pop up after clicking popView.
-3. Determine the popView show wide high.
-4. Determine popView show direction.
-typedef NS_ENUM (NSUInteger, Direction) {
-    top,//Display in the button top
-    bottom,//Display in the button bottom
-    left,//Display in the button left
-    right,//Display in the button right
+
+ 1  The content of the tableview. <br />
+ 2  Determine which button will pop up after clicking popView. <br />
+ 3  Determine the popView show wide high. <br />
+ 4  Determine popView show direction. <br />
+typedef NS_ENUM (NSUInteger, Direction) { <br />
+>   top,//Display in the button top <br />
+  >  bottom,//Display in the button bottom <br />
+  >  left,//Display in the button left <br />
+    right,//Display in the button right <br />
 };
 
-PopView attributes: used to modify popView offset (popView alignment among the button by default)
-offsetY
+ PopView attributes: used to modify popView offset (popView alignment among the button by default) <br />
+offsetY <br />
 offsetX
 
-[the self popView openPop];/ / open popView
+[the self popView openPop];/ / open popView <br />
 [the self popView closePop];/ / close popView
 
 Note that the documents need to use Masonry constraints, and LZXPopTableView. m of didSelectRowAtIndexPath to demand changes.
 
-The specific use the demo.
-Welcome to modify my code.
+The specific use the demo. <br />
+Welcome to modify my code. <br />
 
 # 中文
 ## 介绍
@@ -39,26 +41,26 @@ Welcome to modify my code.
 
 
 ## 使用
-最重要的一行代码:[self.popView initArr:arr withButton:_btn withSize:popFrame withDirection:right];
-对应的参数:
-1.用NSMutableArray存放tableview的内容.
-2.确定哪个button点击后会弹出popView.
-3.确定popView展现的宽高.
-4.确定popView展现的方向.
-typedef NS_ENUM (NSUInteger, Direction) {
-    top,//button上方展现
-    bottom,//button下方展现
-    left,//button左方展现
-    right,//button右方展现
+最重要的一行代码:[self.popView initArr:arr withButton:_btn withSize:popFrame withDirection:right]; <br />
+对应的参数: <br />
+1.用NSMutableArray存放tableview的内容. <br />
+2.确定哪个button点击后会弹出popView. <br />
+3.确定popView展现的宽高. <br />
+4.确定popView展现的方向. <br />
+typedef NS_ENUM (NSUInteger, Direction) { <br />
+> top,//button上方展现  <br />
+>  bottom,//button下方展现 <br />
+>  left,//button左方展现 <br />
+>   right,//button右方展现 <br />
 };
 
-popView属性:用来修改popView的偏移(popView默认对齐button中间)
-offsetY
+popView属性:用来修改popView的偏移(popView默认对齐button中间) <br />
+offsetY <br />
 offsetX
 
-[self.popView openPop];//打开popView
+[self.popView openPop];//打开popView <br />
 [self.popView closePop];//关闭popView
 
-要注意的是,文件需要用到Masonry的约束,还有LZXPopTableView.m中的didSelectRowAtIndexPath可供需求自行修改.
-具体使用看demo吧.
+要注意的是,文件需要用到Masonry的约束,还有LZXPopTableView.m中的didSelectRowAtIndexPath可供需求自行修改. <br />
+具体使用看demo吧. <br />
 欢迎大家修改我的代码.
